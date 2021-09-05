@@ -1,0 +1,80 @@
+.paginator-container { 
+  align-items: center;
+  border-bottom: solid 1px #ededed;
+  display: flex;
+  height: 2rem;
+  padding: .5rem 0;
+}
+
+.paginator-container .pagination {
+  font-weight: 300;
+  font-size: .9rem;
+}
+
+.paginator-container .pagination-divisor {
+  color: #a3a3a3;
+  font-weight: 300;
+  font-size: .9rem;
+  margin: 0 .5rem;
+}
+
+.paginator-container .filter-button {
+  background-color: #ededed;
+  border: unset;
+  border-radius: 1rem;
+  box-shadow: unset;
+  cursor: pointer;
+  font-family: 'Source Sans Pro';
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 0 .1rem;
+  padding: 0.4rem 0.7rem;
+}
+
+.paginator-container .filter-button.selected {
+  background-color: #0ad4fa;
+  color: #fff;
+}
+
+.paginator-container .paginator-buttons { 
+  margin-left: auto;
+  text-align: right;
+  width: 5rem;
+}
+
+.paginator-container .paginator-buttons .arrow-button {
+  background: transparent;
+  border: unset;
+  border-radius: 1rem;
+  cursor: pointer;
+  height: 1.5rem;
+  margin: 0 .1rem;
+  vertical-align: middle;
+  width: 1.5rem;
+}
+
+.paginator-container .paginator-buttons .arrow-button.left-arrow { 
+  background-image: url('../../../assets/images/icons/arrow-left.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paginator-container .paginator-buttons .arrow-button.right-arrow { 
+  background-image: url('../../../assets/images/icons/arrow-right.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width : 442px) {
+  .paginator-container .pagination {
+    font-size: .7rem;
+  }
+
+  .paginator-container .pagination-divisor {
+    font-size: .7rem;
+    margin: 0 .2rem;
+    min-width: 3rem;
+  }
+}

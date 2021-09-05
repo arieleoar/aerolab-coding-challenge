@@ -1,0 +1,32 @@
+.toaster {
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 15px 0px grey;
+  top: -5rem;
+  height: 3rem;
+  margin: 0 20%;
+  position: absolute;
+  transition: top 100ms ease-in-out;
+  width: 60%;
+}
+
+.toaster.opened { 
+  top: 4rem;
+  transition: top 100ms ease-in-out;
+}
+
+.toaster.success{
+  background: linear-gradient(90deg, #40d390  3%, #ffffff 3%, #ffffff 100%);
+}
+
+.toaster.error {
+  background: linear-gradient(90deg, #f53267 3%, #ffffff 3%, #ffffff 100%);
+}
+
+.toaster .toaster-message {
+  font-weight: 500;
+  margin: 0;
+  line-height: 3rem;
+  padding-left: 3rem;
+  width: 100%;
+}
