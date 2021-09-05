@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
-import ProductCard from "./product-card/product-card";
+import ProductCard from './product-card/product-card';
+import loader from '../../../assets/images/icons/circle-notch-solid.svg';
 import './products-grid.css';
 
 class ProductsGrid extends Component {
@@ -36,7 +37,11 @@ class ProductsGrid extends Component {
               </div>
     }
     else {
-      return <p>Loading...</p>
+      return  <div className='loader'>
+                <img className='spinner' src={loader} alt='...' 
+                  style={{animation: `spin 2s linear infinite`}}></img>
+                <h1 className='loader-text'>Loading...</h1>
+              </div>
     }
   }
 
