@@ -63,7 +63,7 @@ class BodyContainer extends Component {
       }
     )
     .catch((error) => {
-      this.callToaster('An error ocurred while loading the catalog, please retry',  ERROR_MESSAGE);
+      this.props.callToaster('An error ocurred while loading the catalog, please retry',  ERROR_MESSAGE);
       console.error(error);
     });
   }
